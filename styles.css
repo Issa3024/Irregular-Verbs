@@ -1,0 +1,105 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #d60000;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead {
+  background-color: #000;
+  color: #fff;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 12px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.grupo-a { background-color: #a5d6a7; }  /* verde claro */
+.grupo-b { background-color: #fff59d; }  /* amarillo */
+.grupo-c { background-color: #90caf9; }  /* azul cielo */
+.grupo-d { background-color: #ffcc80; }  /* naranja claro */
+.grupo-e { background-color: #ce93d8; }  /* violeta */
+.grupo-f { background-color: #ff8a80; }  /* coral */
+.grupo-g { background-color: #f48fb1; }  /* rosa */
+.grupo-h { background-color: #c5e1a5; }  /* verde lima */
+.grupo-i { background-color: #b2ebf2; }  /* celeste */
+.grupo-j { background-color: #e1bee7; }  /* lila */
+.grupo-k { background-color: #fbc02d; }  /* amarillo dorado */
+.grupo-l { background-color: #81d4fa; }  /* azul claro */
+.grupo-m { background-color: #ffb74d; }  /* naranja */
+.grupo-n { background-color: #ef9a9a; }  /* rojo claro */
+.grupo-o { background-color: #d7ccc8; }  /* gris beige */
+.grupo-p { background-color: #aed581; }  /* verde musgo */
+.grupo-q { background-color: #ffd54f; }  /* amarillo suave */
+.grupo-r { background-color: #ff8a65; }  /* salmón */
+.grupo-s { background-color: #ba68c8; }  /* morado */
+
+
+td:hover {
+  background-color: #ffe082;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+
+  td::before {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    font-weight: bold;
+    color: #555;
+    white-space: nowrap;
+  }
+
+  td:nth-child(1)::before { content: "Infinitive"; }
+  td:nth-child(2)::before { content: "Past"; }
+  td:nth-child(3)::before { content: "Past Participle"; }
+  td:nth-child(4)::before { content: "Spanish"; }
+
+.group-title {
+  background-color: #333 !important;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+  cursor: default;
+  pointer-events: none;
+}
+
+.group-title:hover {
+  background-color: #333 !important; 
+}
